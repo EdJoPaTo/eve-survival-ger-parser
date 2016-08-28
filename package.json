@@ -1,0 +1,6 @@
+{
+  "name": "eve-survival-ger-parser",
+  "description": "Tool zum Parsen von bestehenden Übersetzungsdaten in besser maschinenlesbare Daten",
+  "version": "0.0.1",
+  "license": "MIT"
+}
