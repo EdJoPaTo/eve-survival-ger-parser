@@ -62,8 +62,8 @@ function parseName( val ) {
 function parseDeName( val ) {
   var name = parseName( val );
   if ( !name ) {
-    let tmp = />([^<]+)</.exec( val );
-    name = tmp ? tmp[ 1 ] : null;
+    let tmp = /<(\w+)[^>]+>(.+)<\/\1>/.exec( val );
+    name = tmp ? parseName( tmp[ 2 ] ) : null;
   }
   return name;
 }
